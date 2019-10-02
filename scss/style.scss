@@ -1,0 +1,1314 @@
+body {
+    margin: 0;
+}
+
+.mobile-panel-wr {
+    display: none;
+}
+
+/* HEADER
+------------------------*/
+
+.site-header {
+    background: url(../images/header-bg.jpg) 0 0 no-repeat;
+    background-size: cover;
+    min-height: 880px;
+}
+
+.top-panel {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+    padding: 0 20px;
+
+    .top-panel-in {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        height: 115px;
+    }
+}
+
+.menu-btn {
+    display: none;
+}
+
+.site-logo {
+    position: relative;
+    padding-top: 22px;
+    width: 168px;
+    z-index: 1;
+
+    a {
+        position: relative;
+        display: block;
+        width: 67px;
+        color: #fff;
+        text-decoration: none;
+        font: bold 30px/67px 'Roboto Condensed', sans-serif;
+        background: #11749e;
+        text-align: center;
+        transition: all 0.3s ease-out 0.1s;
+
+        &:hover {
+            background: #0f8ec4;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            right: -12px;
+            width: 67px;
+            height: 67px;
+            background: rgba(255, 255, 255, 0.75);
+            z-index: -1;
+        }
+    }
+}
+
+/* TOP-MENU
+------------------------------------*/
+
+.top-menu-wr {
+    ul {
+        padding: 53px 0 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            vertical-align: top;
+
+            a {
+                position: relative;
+                display: block;
+                padding: 0 12px;
+                color: #fff;
+                text-decoration: none;
+                font: 300 20px/22px 'Roboto', sans-serif;
+                
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 100%;
+                    bottom: -41px;
+                    height: 6px;
+                    background: #11749e;
+                    transition: all 0.3s ease-out 0.1s;
+                }
+
+                &:hover {
+                    &:after {
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* SOC-NETWORKS
+------------------------------------*/
+
+.soc-networks {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding: 53px 0 0;
+
+    a {
+        margin: 0 0 0 24px;
+
+        svg {
+            fill: #fff;
+            transition: all 0.3s ease-out 0.1s;
+        }
+
+        &:hover {
+            svg {
+                fill: #11749e;
+            }
+        }
+    }
+}
+
+/* SLOGAN
+------------------------------------*/
+
+.slogan {
+    padding: 150px 0 110px;
+    text-align: center;
+    text-transform: uppercase;
+
+    .slogan-top {
+        display: block;
+        color: #fff;
+        font: 110px 'Oswald', sans-serif;
+        letter-spacing: 10px;
+        margin: 0;
+    }
+
+    .slogan-bot {
+        display: block;
+        color: #11749e;
+        font: 20px 'Roboto', sans-serif;
+        letter-spacing: 10px;
+    }
+}
+
+.scroll-down-button {
+    width: 80px;
+    margin: 0 auto;
+    color: #fff;
+    font: 13px 'Roboto', sans-serif;
+    text-align: center;
+    cursor: pointer;
+
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 63px;
+        height: 63px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin: 20px 0 0;
+        background: url(../images/scroll.svg) center center no-repeat;
+        background-size: 13px 18px;
+        transform: rotate(90deg);
+    }
+}
+
+/* ADVENTURE
+------------------------------------*/
+
+.adventures-block {
+    background: #11749e;
+    padding: 0 20px;
+
+    .adventures-block-in {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 70px 0 114px;
+
+        .adventures-block-head {
+            text-align: center;
+            font: bold 250px/250px 'Roboto Condensed', sans-serif;
+            color: #3c8daf;
+            position: relative;
+            text-transform: uppercase;
+            margin: 0 0 30px;
+            
+            span {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                color: #fff;
+                margin-top: -19px;
+                font: 38px 'Roboto', sans-serif;
+            }
+        }
+    }
+
+    .adventures-block-list {
+        display: flex;
+        justify-content: space-between;
+
+        .adventures-block-item {
+            width: 23%;
+            text-align: center;
+            color: #fff;
+
+            .adventures-block-icon {
+                display: flex;
+                width: 133px;
+                height: 133px;
+                margin: 0 auto 22px;
+                border-radius: 50%;
+                background: #2e85aa;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    fill: #fff;
+                }
+            }
+
+            .adventures-block-title {
+                font: 18px 'Roboto', sans-serif;
+                text-transform: uppercase;
+                margin: 0 0 28px;
+            }
+
+            .adventures-block-text {
+                font: 300 14px/23px 'Roboto', sans-serif;
+            }
+        }
+    }
+}
+
+/* ARTICLE
+------------------------------------*/
+
+.articles-wr {
+    .article-first {
+        background: #222222;
+        
+        .article-bl {
+            justify-content: flex-end;
+        }
+
+        .article-text {
+            color: #fff;
+            padding: 80px 108px 80px 0;
+            width: 462px;
+
+            .article-date {
+                font: 300 13px/15px 'Roboto', sans-serif;
+                margin: 0 0 15px;
+
+                span {
+                    padding: 0 14px;
+                }
+            }
+
+            .article-title {
+                font: 25px/27px 'Roboto', sans-serif;
+                text-transform: uppercase;
+                margin: 0 0 36px;
+            }
+
+            .article-body {
+                font: 300 15px/23px 'Roboto', sans-serif;
+            }
+        }
+
+        .article-pic {
+            width: 50%;
+            background: url(../images/pic1.jpg) 0 0 no-repeat;
+        }
+    }
+
+    .article-second {
+        background: #f3f3f3;
+
+        .article-text {
+            color: #000;
+            padding: 80px 0 80px 108px;
+            width: 462px;
+            order: 2;
+
+            .article-date {
+                font: 300 13px/15px 'Roboto', sans-serif;
+                margin: 0 0 15px;
+
+                span {
+                    padding: 0 14px;
+                }
+            }
+
+            .article-title {
+                font: 25px/27px 'Roboto', sans-serif;
+                text-transform: uppercase;
+                margin: 0 0 36px;
+            }
+
+            .article-body {
+                font: 300 15px/23px 'Roboto', sans-serif;
+            }
+        }
+
+        .article-pic {
+            order: 1;
+            width: 50%;
+            background: url(../images/pic2.jpg) 0 0 no-repeat;
+        }
+    }
+
+    .article-bl {
+        display: flex;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+/* SERVICES
+------------------------------------*/
+
+.services-block {
+    padding: 0 20px;
+
+    .services-block-in {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 70px 0 114px;
+    }
+
+    .services-block-head {
+        text-align: center;
+        font: bold 250px/250px 'Roboto Condensed', sans-serif;
+        color: #d7d7d7;
+        position: relative;
+        text-transform: uppercase;
+        margin: 0 0 30px;
+        
+        span {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            color: #222222;
+            margin-top: -19px;
+            font: 38px 'Roboto', sans-serif;
+        }
+    }
+
+    .services-block-list {
+        display: flex;
+        justify-content: space-between;
+
+        .services-block-item {
+            width: 23%;
+            text-align: center;
+            color: #222;
+            transition: all 0.3s ease-out 0.1s;
+
+            .services-block-pic {
+                margin: 0 0 40px;
+                font-size: 0;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .services-block-title {
+                font: 18px 'Roboto', sans-serif;
+                text-transform: uppercase;
+                margin: 0 10px 28px;
+                color: #11749e;
+            }
+
+            .services-block-text {
+                font: 300 13px/23px 'Roboto', sans-serif;
+                padding: 0 10px 20px;
+            }
+
+            &:hover {
+                background: #efefef;
+            }
+        }
+    }
+}
+
+
+/* QUOTE
+------------------------------------*/
+
+.quote-block {
+    background: #11749e;
+    color: #fff;
+    padding: 0 20px;
+
+    .quote-block-in {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .quote-block-item {
+            width: 48%;
+            box-sizing: border-box;
+            padding: 0 0 0 104px;
+            min-height: 72px;
+            background: url(../images/pen.svg) 0 0 no-repeat;
+            background-size: 70px 70px;
+            font: 300 15px/20px 'Roboto', sans-serif;
+        }
+    }
+}
+
+/* INFORMATION
+------------------------------------*/
+
+.information-block {
+    background: url(../images/edit-bl-bg.jpg) 0 0 no-repeat;
+    background-size: cover;
+    padding: 0 20px;
+
+    .information-block-in {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .information-block-text {
+        color: #fff;
+        width: 50%;
+    }
+
+    .information-block-title {
+        font: bold 25px 'Roboto', sans-serif;
+        text-transform: uppercase;
+        margin: 0 0 32px;
+    }
+
+    .information-body {
+        font: 300 15px/23px 'Roboto', sans-serif;
+        max-width: 480px;
+        margin: 0 0 60px;
+    }
+
+    .information-list {
+        max-width: 430px;
+
+        .information-list-item {
+            margin: 0 0 24px;
+                
+            span {
+                display: block;
+                background: #11749e;
+                padding: 10px 20px;
+                font: 15px/20px 'Roboto', sans-serif;
+                text-transform: uppercase;
+            }
+            
+            &.i-item-1 {
+                span {
+                    margin-right: 58px;
+                }
+            }
+
+            &.i-item-2 {
+                span {
+                    margin-right: 28px;
+                }
+            }
+        }
+    }
+
+    .information-pic {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* TEAM
+------------------------------------*/
+
+.team-block {
+    padding: 0 20px;
+
+    .team-block-in {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 70px 0 100px;
+    }
+
+    .team-block-head {
+        text-align: center;
+        font: bold 250px/250px 'Roboto Condensed', sans-serif;
+        color: #d7d7d7;
+        position: relative;
+        text-transform: uppercase;
+        margin: 0 0 30px;
+        
+        span {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            color: #222222;
+            margin-top: -19px;
+            font: 38px 'Roboto', sans-serif;
+        }
+    }
+
+    .team-description {
+        color: #222222;
+        text-align: center;
+        font: 300 30px/35px 'Roboto', sans-serif;
+        margin: 0 0 62px;
+    }
+
+    .team-block-list {
+        display: flex;
+        justify-content: space-between;
+
+        .team-block-item {
+            width: 23%;
+            text-align: center;
+
+            .team-block-pic {
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            &:hover span {
+                &:after {
+                    left: 25px;
+                    right: 25px;
+                }
+            }
+        }
+
+        .team-block-title {
+            position: relative;
+            background: #fff;
+            margin: -48px 25px 0;
+            padding: 20px 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font: 20px 'Roboto', sans-serif;
+            color: #11749e;
+
+            span {
+                position: relative;
+                display: block;
+                padding: 6px 0 0;
+                color: #000000;
+                font-size: 15px;
+                text-transform: none;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    right: 50%;
+                    height: 1px;
+                    background: #000;
+                    transition: all 0.3s ease-out 0.1s;
+                }
+            }
+        }
+    }
+}
+
+/* FORM
+------------------------------------*/
+
+.form-block {
+    background: url(../images/form-bg.jpg) 0 0 no-repeat;
+    background-size: cover;
+    padding: 0 20px;
+
+    .form-block-in {
+        padding: 70px 0 100px;
+        margin: 0 auto;
+        max-width: 1170px;
+    }
+
+    .form-block-head {
+        text-align: center;
+        font: bold 250px/250px 'Roboto Condensed', sans-serif;
+        color: rgba(255, 255, 255, 0.18);
+        position: relative;
+        text-transform: uppercase;
+        margin: 0 0 30px;
+        
+        span {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            color: #fff;
+            margin-top: -19px;
+            font: 38px 'Roboto', sans-serif;
+        }
+    }
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .form-field {
+            display: inline-block;
+            vertical-align: top;
+            width: 32%;
+            margin: 0 0 38px;
+
+            &.type-textarea {
+                width: 100%;
+            }
+
+            &.type-submit {
+                width: 230px;
+                margin: 0 auto;
+            }
+        }
+
+        input[type="text"], input[type="email"], input[type="phone"] {
+            width: 100%;
+            border: 1px solid #fff;
+            background: transparent;
+            height: 46px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            color: #fff;
+            font: 300 15px/46px 'Roboto', sans-serif;
+            outline: none;
+
+            &::placeholder {
+                color: #fff;
+            }
+
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #fff;
+            background: transparent;
+            height: 150px;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            color: #fff;
+            font: 300 15px 'Roboto', sans-serif;
+            outline: none;
+            resize: none;
+
+            &::placeholder {
+                color: #fff;
+            }
+
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+        }
+
+        button {
+            width: 100%;
+            background: #11749e;
+            padding: 15px;
+            color: #fff;
+            text-transform: uppercase;
+            font: 24px 'Roboto', sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-out 0.1s;
+
+            &:hover {
+                background: #0f8ec4;
+            }
+        }
+    }
+}
+
+/* MAP
+------------------------------------*/
+
+#map {
+    height: 332px;
+}
+
+/* FOOTER
+------------------------------------*/
+
+.site-footer {
+    background: #222222;
+    min-height: 114px;
+    padding: 0 20px;
+
+    .site-footer-in {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .site-copyright {
+        color: #fff;
+        font: 300 14px 'Roboto', sans-serif;
+        padding: 52px 0 0;
+    }
+
+    .design-by {
+        color: #fff;
+        font: 300 14px 'Roboto', sans-serif;
+        padding: 52px 0 0;
+    }
+}
+
+/* ADAPTIVE
+------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+    /* ARTICLE
+    ------------------------------------*/
+
+    .articles-wr {
+        .article-first {
+            .article-text {
+                padding-right: 80px;
+                padding-left: 20px;
+                width: 50%;
+                box-sizing: border-box;
+            }
+        }
+
+        .article-second {
+            .article-text {
+                padding-left: 80px;
+                padding-right: 20px;
+                width: 50%;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /* MOBILE-PAN
+    ------------------------------------*/
+
+    .mobile-panel-wr {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+
+        &.opened {
+            display: block;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .mobile-panel {
+            left: -100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 270px;
+            padding: 60px 15px 0;
+            background: #11749e;
+            overflow: auto;
+
+            .top-menu {
+                padding: 0 0 30px;
+                margin: 0;
+                list-style: none;
+
+                li {
+                    a {
+                        display: block;
+                        padding: 10px 15px;
+                        color: #fff;
+                        font: 300 14px 'Roboto', sans-serif;
+                        text-decoration: none;
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+
+            .soc-networks {
+                display: none;
+            }
+        }
+    }
+    
+    /* HEADER
+    ------------------------------------*/
+
+    .menu-btn {
+        display: block;
+        margin: auto 0;
+        flex:  3 1 100px;
+    }
+
+    .top-menu-wr {
+        display: none;
+    }
+
+    .site-logo {
+        flex:  3 1 100px;
+
+        a {
+            margin: 0 auto;
+        }
+    }
+
+    .soc-networks {
+        flex:  3 1 100px;
+        padding: 47px 0 0;
+    }
+
+    /* ARTICLE
+    ------------------------------------*/
+
+    .articles-wr {
+        .article-first {
+            .article-text {
+                padding: 50px 20px;
+            }
+        }
+
+        .article-second {
+            .article-text {
+                padding: 50px 20px;
+            }
+        }
+    }
+    
+    /* INFORMATION
+    ------------------------------------*/
+
+    .information-block {
+        .information-block-in {
+            padding: 40px 0;
+        }
+
+        .information-pic {
+            text-align: right;
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    /* HEADER
+    ------------------------------------*/
+    
+    .site-header {
+        min-height: 640px;
+    }
+
+    .slogan {
+        padding-top: 50px;
+
+        .slogan-top {
+            font-size: 80px;
+        }
+
+        .slogan-bot {
+            letter-spacing: 6px;
+        }
+    }
+
+    /* ADVENTURE
+    ------------------------------------*/
+
+    .adventures-block {
+        .adventures-block-in {
+            padding: 40px 0 40px;
+        }
+
+        .adventures-block-list {
+            flex-wrap: wrap;
+
+            .adventures-block-item {
+                width: 48%;
+                margin: 0 0 40px;
+            }
+        }
+    }
+
+    /* SERVICES
+    ------------------------------------*/
+
+    .services-block {
+        .services-block-in {
+            padding: 40px 0 0;
+        }
+
+        .services-block-list {
+            flex-wrap: wrap;
+
+            .services-block-item {
+                width: 48%;
+                margin: 0 0 40px;
+            }
+        }
+    }
+
+    /* QUOTE
+    ------------------------------------*/
+
+    .quote-block {
+        .quote-block-in {
+            padding: 40px 0 0;
+            flex-wrap: wrap;
+
+            .quote-block-item {
+                width: 100%;
+                margin: 0 0 40px;
+            }
+        }
+    }
+
+    /* TEAM
+    ------------------------------------*/
+
+    .team-block {
+        .team-block-in {
+            padding: 40px 0 0;
+        }
+
+        .team-block-list {
+            flex-wrap: wrap;
+
+            .team-block-item {
+                width: 48%;
+                margin: 0 0 40px;
+
+                .team-block-title {
+                    display: inline-block;
+                    min-width: 200px;
+                }
+            }
+        }
+    }
+
+    /* FORM
+    ------------------------------------*/ 
+    
+    .form-block {
+        .form-block-in {
+            padding: 40px 0;
+        }
+
+        .form-block-head {
+            span {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* ARTICLE
+    ------------------------------------*/
+
+    .articles-wr {
+        .article-first {
+            .article-text {
+                width: 100%;
+            }
+
+            .article-pic {
+                width: 100%;
+                height: 440px;
+                background-position: center 0;
+            }
+        }
+
+        .article-second {
+            .article-text {
+                order: 1;
+                width: 100%;
+            }
+
+            .article-pic {
+                width: 100%;
+                height: 440px;
+                order: 2;
+            }
+        }
+
+        .article-bl {
+            flex-wrap: wrap;
+        }
+    }
+
+    /* ADVENTURE
+    ------------------------------------*/
+
+    .adventures-block {
+        .adventures-block-in {
+            .adventures-block-head {
+                span {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    /* SERVICES
+    ------------------------------------*/
+
+    .services-block {
+        .services-block-head {
+            span {
+                font-size: 30px;
+            }
+        }
+    }
+
+    /* INFORMATION
+    ------------------------------------*/
+
+    .information-block {
+        .information-block-text {
+            width: 100%;
+        }
+
+        .information-body {
+            margin: 0 0 30px;
+        }
+
+        .information-pic {
+            display: none;
+        }
+
+        .information-list {
+            .information-list-item {
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+
+    /* TEAM
+    ------------------------------------*/
+
+    .team-block .team-description {
+        font-size: 25px;
+    }
+    
+    /* MAP
+    ------------------------------------*/
+
+    #map {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    /* FORM
+    ------------------------------------*/ 
+    
+    .form-block {
+        .form-block-head {
+            span {
+                font-size: 20px;
+            }
+        }
+
+        form .form-field {
+            width: 100%;
+            margin: 0 0 20px;
+
+            &.type-submit {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* TEAM
+    ------------------------------------*/
+
+    .team-block {
+        .team-description {
+            font-size: 19px;
+            line-height: 24px;
+        }
+
+        .team-block-list {
+            .team-block-item {
+                .team-block-title {
+                    display: block;
+                    min-width: 0;
+                }
+            }
+        }
+    }
+
+    /* FOOTER
+    ------------------------------------*/
+
+    .site-footer {
+
+        .site-footer-in {
+            flex-wrap: wrap;
+            padding: 40px 0;
+        }
+
+        .site-copyright, .design-by {
+            width: 100%;
+            text-align: center;
+            padding: 0 0 4px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* MOBILE-PAN
+    ------------------------------------*/
+    
+    .mobile-panel-wr {
+        .mobile-panel {
+            width: 240px;
+
+            .soc-networks {
+                display: flex;
+                justify-content: center;
+                padding: 0 0 20px;
+
+                a {
+                    margin: 0 12px;
+                }
+            }
+        }
+    }
+
+    /* HEADER
+    ------------------------------------*/
+
+    .site-header {
+        min-height: 485px;
+    }
+
+    .site-logo {
+        a {
+            margin: 0 0 0 auto;
+        }
+    }
+
+    .soc-networks {
+        display: none;
+    }
+    
+    .slogan {
+        padding-bottom: 70px;
+
+        .slogan-top {
+            font-size: 46px;
+        }
+
+        .slogan-bot {
+            letter-spacing: 3px;
+            font-size: 15px;
+        }
+    }
+
+    /* ADVENTURE
+    ------------------------------------*/
+
+    .adventures-block {
+        .adventures-block-in .adventures-block-head {
+            font-size: 170px;
+            line-height: 170px;
+
+            span {
+                font-size: 19px;
+            }
+        }
+
+        .adventures-block-list {
+            .adventures-block-item {
+                width: 100%;
+
+                .adventures-block-icon {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+        }
+    }
+
+    /* ARTICLE
+    ------------------------------------*/
+
+    .articles-wr {
+        .article-first {
+            .article-pic {
+                height: 250px;
+                background-size: cover;
+            }
+        }
+
+        .article-second {
+            .article-pic {
+                height: 250px;
+                background-size: cover;
+            }
+        }
+    }
+
+    /* SERVICES
+    ------------------------------------*/
+
+    .services-block {
+        .services-block-head {
+            font-size: 170px;
+            line-height: 170px;
+        }
+
+        .services-block-list .services-block-item {
+            width: 100%;
+            
+            .services-block-pic {
+                margin: 0 0 30px;
+            }
+
+            .services-block-title {
+                margin: 0 0 18px;
+            }
+        }
+    }
+
+    /* QUOTE
+    ------------------------------------*/
+
+    .quote-block {
+        .quote-block-in {
+
+            .quote-block-item {
+                padding: 0 0 0 40px;
+                background-size: 25px;
+            }
+        }
+    }
+
+    /* TEAM
+    ------------------------------------*/
+
+    .team-block {
+        .team-block-head {
+            font-size: 170px;
+            line-height: 170px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        .team-block-list {
+            .team-block-item {
+                width: 100%;
+                max-width: 270px;
+                margin: 0 auto 40px;
+            }
+        }
+    }
+
+    /* FORM
+    ------------------------------------*/ 
+    
+    .form-block {
+        .form-block-head {
+            font-size: 170px;
+            line-height: 170px;
+        }
+    }
+}
